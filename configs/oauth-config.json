@@ -1,0 +1,21 @@
+{
+  "app": {
+    "name": "trae-oauth-app",
+    "client_id": "Ov23lixxxxxxxxx",
+    "client_secret": "",
+    "redirect_uri": "http://localhost:3000/auth/callback"
+  },
+  "scopes": [
+    "repo",
+    "read:user",
+    "user:email",
+    "workflow",
+    "write:packages",
+    "read:org"
+  ],
+  "security": {
+    "use_state": true,
+    "use_pkce": true,
+    "token_storage": "environment"
+  }
+}

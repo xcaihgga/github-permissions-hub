@@ -1,0 +1,28 @@
+# 敏感配置文件
+.env
+.env.local
+*.pem
+*.key
+secrets/
+
+# Token 文件（禁止提交任何包含真实 token 的文件）
+*token*
+*secret*
+!tokens/           # 允许提交 tokens/ 目录下的文档
+!token-*.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

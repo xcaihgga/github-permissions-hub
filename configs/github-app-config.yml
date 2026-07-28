@@ -1,0 +1,41 @@
+# GitHub App 配置模板
+# 复制此文件并填写实际值，不要提交到仓库
+
+app:
+  name: "trae-integration-app"
+  id: "123456"                          # GitHub App ID
+  client_id: "Iv23lixxxxxxxxx"          # OAuth client ID
+  client_secret: ""                     # OAuth client secret（敏感，从环境变量读取）
+  webhook_secret: ""                    # Webhook 签名密钥（敏感）
+  private_key_path: "/secrets/trae-app.pem"  # 私钥文件路径
+
+# 权限配置（与 GitHub App 设置保持一致）
+permissions:
+  repository:
+    actions: "write"
+    checks: "write"
+    contents: "write"
+    deployments: "write"
+    issues: "write"
+    metadata: "read"
+    packages: "write"
+    pull_requests: "write"
+    statuses: "write"
+    workflows: "write"
+
+  organization:
+    members: "read"
+
+# Webhook 事件订阅
+events:
+  - pull_request
+  - issues
+  - push
+  - workflow_run
+  - release
+
+# 安装配置
+installation:
+  id: "78901234"                        # Installation ID
+  target: "user"                        # user 或 organization
+  target_name: "your-username"          # 用户名或组织名
