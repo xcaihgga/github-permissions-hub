@@ -12,7 +12,8 @@ github-permissions-hub/
 ├── scripts/          # 可复用的 API 脚本和封装
 ├── configs/          # 配置文件模板
 ├── examples/         # TRAE 中使用示例
-└── vercel/           # Vercel 权限管理
+├── vercel/           # Vercel 权限管理
+└── volcengine/       # 火山引擎权限管理
 ```
 
 ## 快速开始
@@ -26,6 +27,7 @@ github-permissions-hub/
 | TRAE 插件/集成 | GitHub App | `apps/github-apps.md` |
 | 用户登录授权 | OAuth App | `apps/oauth-apps.md` |
 | Vercel 部署 | Vercel Account Token | `vercel/README.md` |
+| 火山引擎云服务 | AK/SK | `volcengine/README.md` |
 
 ### 2. 获取凭证
 
