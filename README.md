@@ -1,6 +1,6 @@
-# GitHub 权限管理中心
+# 权限管理中心
 
-> 专为 TRAE 环境设计的 GitHub 权限统一管理项目，涵盖 Token、GitHub App、OAuth 等全场景认证方案。
+> 专为 TRAE 环境设计的多平台权限统一管理项目，涵盖 GitHub、Vercel 等全场景认证方案。
 
 ## 项目结构
 
@@ -11,7 +11,8 @@ github-permissions-hub/
 ├── permissions/      # 权限矩阵与 Scopes 参考
 ├── scripts/          # 可复用的 API 脚本和封装
 ├── configs/          # 配置文件模板
-└── examples/         # TRAE 中使用示例
+├── examples/         # TRAE 中使用示例
+└── vercel/           # Vercel 权限管理
 ```
 
 ## 快速开始
@@ -24,6 +25,7 @@ github-permissions-hub/
 | 精细化权限控制 | Fine-grained PAT | `tokens/fine-grained-pats.md` |
 | TRAE 插件/集成 | GitHub App | `apps/github-apps.md` |
 | 用户登录授权 | OAuth App | `apps/oauth-apps.md` |
+| Vercel 部署 | Vercel Account Token | `vercel/README.md` |
 
 ### 2. 获取凭证
 
